@@ -17,3 +17,15 @@
    letter-spacing: 0.8px;
    text-decoration: underline;
 }
+
+
+@media screen and (max-width: 768px){
+    .highlight{
+        width: 50%;
+        height: 30px;
+    }
+
+    .text-highlight{
+        font-size: 11px;
+    }
+}

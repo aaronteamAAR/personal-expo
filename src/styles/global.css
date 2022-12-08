@@ -48,8 +48,7 @@ div:is(.profile, .about, .quote){
 }
 
 .imageMe{
-    grid-column: 2;
-    margin: auto;
+display: none;
 }
 
 .my_name{
@@ -66,17 +65,77 @@ div:is(.profile, .about, .quote){
 }
 
 
+.about2{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 29em;
+    margin: auto;
+}
+
+
+.tools{
+    list-style: none;
+}
+
 .second-col{
     grid-row: 2;
     background-color: black;
+    color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: 50em;
+    background-size: cover;
     width: 100%;
-  margin-top: 3em;
+    margin-top: 3em;
     grid-column: span 3; 
 }
 
 
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 63px;
+    padding: 0 23px 0 23px;
+}
 
 
+div:is(.card1, .card2, .card3){
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    border-radius: 2px;
+  background-color: rgb(61, 61, 61);
+  color: rgb(146, 146, 146);
+  width: 100%;
+  height: 350px;
+  box-shadow: 20px 10px 0px 0px rgba(47,13,255,0.75);
+-webkit-box-shadow: 20px 10px 0px 0px rgba(47,13,255,0.75);
+-moz-box-shadow: 20px 10px 0px 0px rgba(47,13,255,0.75);
+}
+
+
+
+.card_btn{
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #222222;
+    color: #acacac;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    grid-row: 2;
+    transition: transform 200ms,background 200ms;
+
+}
+
+.card_btn:hover{
+    transform: translateY(-2px);
+}
 
 /* responsive  */
 
@@ -87,28 +146,86 @@ div:is(.profile, .about, .quote){
 
 @media screen and (max-width: 768px){
     .container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);  
+        display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
     }
     .About-me{
-        
         font-size: 12px;
     }
     
     .about{
-        width: 60%;
-        grid-column: span 2; 
+        grid-column: span 2;
+        width: 100%;
+        grid-row: 1; 
     }
 
     .about > .pro{
         font-size: 32px;
     }
   
-    .second-col{
+
+    .about2{
+        margin-top: -3em;
         grid-row: 2;
-        height: 140px;
-        grid-column: span 2;
+        grid-column: 1;
     }
+    .second-col{
+        margin-top: -12em;
+        grid-row: 3;
+        height: 750px;
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 70px;
+    }
+
+    
+div:is(.card1, .card2, .card3){
+    height: 150px;
+    width: 100%;
+    box-shadow: none;
+}
+
+.card1{
+    grid-row: 1;
+}
+
+.card2{
+    grid-row: 2;
+}
+
+.card3{
+    grid-row: 3;
+}
+.card_header{
+    font-size: 21px;
+    font-weight: 500;
+    padding:  0 23px 0 23px;
+    text-transform: capitalize;
+}
+
+.card_body{
+    padding:  0 23px 0 23px;
+    font-size: 12px;
+}
+
+.card_footer{
+    margin-top: 0.6em;
+    margin-left: 5.5em;
+}
+.card_btn{
+    zoom: 0.7;
+    width: 30%;
+}
 
     .my_name{
         grid-column: 1;
@@ -119,26 +236,31 @@ div:is(.profile, .about, .quote){
         font-weight: 900;
         font-size: 13em;
         letter-spacing: 2.9px;
-        margin: -2.4em 0 0 2.5rem;
+        margin: 2.3em 0 0 2.5rem;
 
     }
-
-
     .quote{
-        margin-top: -38em;
-        grid-row: 4;
-        grid-column: span 2;
-        font-size: 14px;
+        grid-row: 5;
+        width: 90%;
+        margin-top: -13em;
+        margin-bottom: 0;
     }
 
 
     div:is(.quote-header, .quote-body){
         grid-column: span 2;
+        font-size: 22px;
         width: 100%;
     }
 
-    .imageMe{
-        grid-row: 5;
+    .quote-body{
+        font-size: 13px !important;
+        
+    }
+
+    .imageme_img{
+        margin-top: 6em;
+      transform: translatex(-19em);
     }
 
 }

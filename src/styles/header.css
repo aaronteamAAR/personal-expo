@@ -27,8 +27,8 @@
 
     .svg_star{
       grid-column: 1;
-      grid-row:3 ;
-      transform: translateY(-28em);
+      grid-row:4 ;
+      transform: translateY(-3em);
       width:300px;
     }
   } 
