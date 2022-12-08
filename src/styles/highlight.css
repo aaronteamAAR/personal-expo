@@ -1,0 +1,19 @@
+
+
+
+.highlight{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(57, 223, 57);
+    width: 25%;
+    height: 40px;
+}
+
+.text-highlight{
+   padding-top: 13px;
+   font-size: 13px;
+   letter-spacing: 0.8px;
+   text-decoration: underline;
+}

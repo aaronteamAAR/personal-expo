@@ -15,4 +15,22 @@
   }
 
 
+  .svg_star{
+    grid-column: 3;
+    grid-row: 1;
+    transform: translateY(-150px);
+  }
+
+
+
+  @media screen and (max-width: 768px){
+
+    .svg_star{
+      grid-column: 1;
+      grid-row:3 ;
+      transform: translateY(-28em);
+      width:300px;
+    }
+  } 
+
   

@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from  '../components/Header.astro';
+import High from '../components/Highlight.astro'
+import Star from "../components/Star.astro";
 import '../styles/global.css'
 ---
 <Layout title="satori">
@@ -8,15 +10,21 @@ import '../styles/global.css'
 		<Header />
 		<div class="container">
 			<div class="about">
+				<span class="pro"> 
+				<b class="stop"></b>software developer</span>
 				<span class="About-me">
-					
-Hello, I'm a software developer with experience in Next JS, React JS, Astro JS, Prisma, Firestore, JavaScript, and Python. I'm passionate about developing modern, efficient web applications that solve real-world problems. 
+											
+						Hello, I'm a software developer with experience in Next JS, React JS, Astro JS, Prisma, Firestore, JavaScript, and Python. I'm passionate about developing modern, efficient web applications that solve real-world problems. 
 
-I enjoy working with the latest technologies to create user-friendly web experiences that are both intuitive and visually appealing. I'm well-versed in web development best practices and have a deep understanding of front-end development. I'm also comfortable working with back-end development and databases, such as Firestore. 
+						I enjoy working with the latest technologies to create user-friendly web experiences that are both intuitive and visually appealing. I'm well-versed in web development best practices and have a deep understanding of front-end development. I'm also comfortable working with back-end development and databases, such as Firestore. 
 
-I'm always open to learning new technologies and techniques, and I'm not afraid to take on challenging tasks. I'm a dedicated and hardworking professional who is committed to developing high-quality applications.
+						I'm always open to learning new technologies and techniques, and I'm not afraid to take on challenging tasks. I'm a dedicated and hardworking professional who is committed to developing high-quality applications.
 				</span>
 			</div>
+			<div class="second-col">
+				
+			</div>
+			
 			<div class="quote">
 				<h1 class="quote-header">Satori(悟り) </h1>
 				<span class="quote-body">Satori means the experience of awakening ("enlightenment") or apprehension of the true nature of reality.[3][6] It is often considered an experience which cannot be expressed in words.[6] While the term satori is derived from the Japanese verb "to know" (satoru), it is distinct from the philosophical concept of knowledge as it represents a transcendence of the distinction between one that knows and knowledge.[3]</span>
@@ -24,12 +32,12 @@ I'm always open to learning new technologies and techniques, and I'm not afraid 
 				<div class="imageMe">
                      <img class="imageme_img" src="./mw.svg" alt="svg of me">
 				</div>
-
+                <Star is:raw />
 				<div class="my_name">
 					<span class="name_abbr">AC</span>
 				</div>
 		</div>
-	
+	<High />
 	</body>
 </Layout>
 	

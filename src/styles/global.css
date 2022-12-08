@@ -5,6 +5,9 @@
     font-family: 'Manrope', sans-serif;
 }
 
+div:is(.profile, .about, .quote){
+    padding: 23px 0 0 23px;   
+}
 
 .container{
     display: grid;
@@ -15,15 +18,26 @@
 }
 
 .about{
-    padding: 23px 0 0 23px;
+    letter-spacing: 0.8px;
+    grid-column: 1;
+    grid-row: 1;
 }
 
+.stop{
+    font-size: 100px;
+}
+
+.pro{
+
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    letter-spacing: -2px;
+}
 .quote{
     grid-column: 1;
     grid-row: 3;
     width: 100%;
-    padding-left: 23px;
-    padding-right: 28px;
     font-weight: 400;
     letter-spacing: 0.8px;
 }
@@ -35,17 +49,96 @@
 
 .imageMe{
     grid-column: 2;
+    margin: auto;
 }
 
 .my_name{
     position: relative;
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 1;
+    margin-top: 7em;
     transform: rotate(90deg);
 }
 
 .name_abbr{
     position: absolute;
     font-size: 24em;
+}
+
+
+.second-col{
+    grid-row: 2;
+    background-color: black;
+    width: 100%;
+  margin-top: 3em;
+    grid-column: span 3; 
+}
+
+
+
+
+
+/* responsive  */
+
+
+
+
+/* sm mobile  */
+
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);  
+    }
+    .About-me{
+        
+        font-size: 12px;
+    }
+    
+    .about{
+        width: 60%;
+        grid-column: span 2; 
+    }
+
+    .about > .pro{
+        font-size: 32px;
+    }
   
+    .second-col{
+        grid-row: 2;
+        height: 140px;
+        grid-column: span 2;
+    }
+
+    .my_name{
+        grid-column: 1;
+        grid-row: 3;
+        transform: rotate(0deg);
+    }
+    .name_abbr{
+        font-weight: 900;
+        font-size: 13em;
+        letter-spacing: 2.9px;
+        margin: -2.4em 0 0 2.5rem;
+
+    }
+
+
+    .quote{
+        margin-top: -38em;
+        grid-row: 4;
+        grid-column: span 2;
+        font-size: 14px;
+    }
+
+
+    div:is(.quote-header, .quote-body){
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    .imageMe{
+        grid-row: 5;
+    }
+
 }
