@@ -1,0 +1,18 @@
+
+
+
+.header-title{
+    padding: 23px 0 15px 0 ;
+    font-weight: 200;
+    font-size: 34px;
+}
+
+.line-1 {
+    height: 1px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cline x1='0' y1='0' x2='100' y2='0' stroke='black' stroke-width='2' vector-effect='non-scaling-stroke'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  width: 40%;
+  }
+
+
+  

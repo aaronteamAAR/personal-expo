@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
+}
+
+.about{
+    padding: 23px 0 0 23px;
+}
+
+.quote{
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    padding-left: 23px;
+    padding-right: 28px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+.quote-header{
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.imageMe{
+    grid-column: 2;
+}
+
+.my_name{
+    position: relative;
+    grid-column: 3;
+    grid-row: 2;
+    transform: rotate(90deg);
+}
+
+.name_abbr{
+    position: absolute;
+    font-size: 24em;
+  
+}
