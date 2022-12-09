@@ -23,6 +23,23 @@
   }
 
 
+  .flex_main{
+      margin-top: 2em;
+      padding: 0 23px 0 0;
+      display: flex;
+      flex-direction: row;
+      gap: 3em;
+      float: right;
+      list-style-type: georgian;
+      
+  }
+
+  .flex_main > li > a{
+    color: black;
+    text-decoration: underline;
+  }
+
+
 
   @media screen and (max-width: 768px){
 

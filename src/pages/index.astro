@@ -6,11 +6,35 @@ import "aos/dist/aos.css";
 import { useEffect } from 'react';
 
 
-const Aos = () => {
-    useEffect(() => {
-    AOS.init();
-  }, []);
+const query = `
+query GetUserArticles($page: Int!) {
+    user(username: "aaronoriginator") {
+        publication {
+            posts(page: $page) {
+                title
+                brief
+                slug
+                coverImage
+            }
+        }
+    }
 }
+`;
+const variables = { page: 0 };
+const data = await fetch("https://api.hashnode.com/", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+        query,
+        variables,
+    }),
+});
+
+const result = await data.json();
+const articles = result.data.user.publication.posts;
+console.log(articles[0].title)
 
 ---
 
@@ -18,7 +42,15 @@ const Aos = () => {
 
 <Layout>
     <div >
-   
+     <div>
+      <img src={articles[0].coverImage} alt="" srcset="">
+     <h2>{articles[0].title}</h2>
+     <span>{articles[0].brief}</span>
+     <span>{articles[0].slug}</span>
+     <a href={`https://dreamdeveloper.hashnode.dev/${articles[0].slug}`}>
+      <span>read more</span>
+    </a>
+     </div>
     </div>
 
 </Layout>
