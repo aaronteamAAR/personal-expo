@@ -22,6 +22,7 @@
     transform: translateY(-150px);
   }
 
+  
 
   .flex_main{
       margin-top: 2em;
@@ -56,8 +57,14 @@
       flex-direction: row;
       gap: 2em;
       top: 4em;
-     position: absolute;
-     font-size: 14px;
+      position: absolute;
+      font-size: 14px;
+      padding-left: 23px;
+    }
+
+    .flex_main > li{
+      padding-top: 12px;
+      font-size: 14px;
     }
   } 
 
