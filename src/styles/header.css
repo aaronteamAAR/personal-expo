@@ -49,6 +49,16 @@
       transform: translateY(-3em);
       width:300px;
     }
+
+
+    .flex_main{
+      padding: 0 23px 0 13px;
+      flex-direction: row;
+      gap: 2em;
+      top: 4em;
+     position: absolute;
+     font-size: 14px;
+    }
   } 
 
   

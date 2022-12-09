@@ -48,6 +48,11 @@ div:is(.profile, .about, .quote) {
     font-size: 48px;
 }
 
+
+.quote2{
+    font-size: 18px;
+    margin-top: 6em;
+}
 .imageMe {
     display: none;
 }
@@ -295,7 +300,8 @@ div:is(.card1, .card2, .card3) {
         margin-left: 0.6em;
         font-size: 52px;
         font-weight: 700;
-        margin-top: 43em;
+        margin-top: 46em;
+        padding-bottom: 1em;
     }
 
     .imageme_img {
