@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import High from "../components/Highlight.astro";
 import Star from "../components/Star.astro";
+import About from "../components/About.astro";
 import "../styles/global.css";
 ---
 
@@ -97,6 +98,13 @@ import "../styles/global.css";
           and knowledge.[3]</span
         >
       </div>
+	  <div class="quote2">
+		<span class="quote2-main">
+			<blockquote class="quote2_body">
+				“The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn.”—Alvin Toffler
+			</blockquote>
+		</span>
+	  </div>
       <div class="imageMe">
         <img class="imageme_img" src="./mw.svg" alt="svg of me" />
       </div>
@@ -107,4 +115,5 @@ import "../styles/global.css";
     </div>
     <High />
   </body>
+  <About />
 </Layout>
