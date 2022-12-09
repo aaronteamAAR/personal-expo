@@ -1,11 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import '../styles/highlight.css';
+
+
+const sx = {
+    fontWeight: '500',
+    color: 'white'
+}
+
+const atag = {
+    textDeoration: 'none',
+    color:'white'
+}
 ---
 
 
 <Layout>
     <div class="highlight">
-        <span class="text-highlight">Made with 💖| repo available with code </span>
+        <span class="text-highlight" style={sx}>#BlackLivesMatter✊🏿 <a style={atag}href="https://www.eji.org">Support the Eqal Justice Initiative</a></span>
     </div>
 </Layout>
