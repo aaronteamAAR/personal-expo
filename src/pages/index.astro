@@ -1,12 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Typed from 'typed.js';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
+
+const Aos = () => {
+    useEffect(() => {
+    AOS.init();
+  }, []);
+}
 
 ---
 
 
 
 <Layout>
-  
+    <div >
+   
+    </div>
+
 </Layout>
