@@ -1,10 +1,102 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import '../../styles/blog.css'
+import Header from  '../../components/Header.astro';
+import High from  '../../components/Highlight.astro';
+
+const query = `
+query GetUserArticles($page: Int!) {
+    user(username: "aaronoriginator") {
+        publication {
+            posts(page: $page) {
+                title
+                brief
+                slug
+                coverImage
+            }
+        }
+    }
+}
+`;
+const variables = { page: 0 };
+const data = await fetch("https://api.hashnode.com/", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+        query,
+        variables
+    }),
+});
+
+const result = await data.json();
+const articles = result.data.user.publication.posts;
+console.log(articles[1].coverImage)
 ---
 
 <Layout>
+    <Header />
+    <h2 class="h2_header">Blogs from hashnode</h2>
     <div class="container">
+       <div class="blog1 blog">
+            <div class="image">
+              <img src={articles[0].coverImage} alt={articles[0].slug}>
+            </div>
+            <div class="blog_header">
+                <h2>{articles[0].title}</h2>
+            </div>
+            <footer class="blog_footer">
+                <a href={`https://dreamdeveloper.hashnode.dev/${articles[0].slug}`}>Read full article</a>
+            </footer>
+       </div>
+
+       <div class="blog2 blog">
+        <div class="image">
+            <img src={articles[3].coverImage} alt={articles[3].slug}>
+          </div>
+          <div class="blog_header">
+              <h2>{articles[3].title}</h2>
+          </div>
+          <footer class="blog_footer">
+              <a href={`https://dreamdeveloper.hashnode.dev/${articles[3].slug}`}>Read full article</a>
+          </footer>
+       </div>
+
+       <div class="blog3 blog">
+        <div class="image">
+            <img src={articles[4].coverImage} alt={articles[4].slug}>
+          </div>
+          <div class="blog_header">
+              <h2>{articles[4].title}</h2>
+          </div>
+          <footer class="blog_footer">
+              <a href={`https://dreamdeveloper.hashnode.dev/${articles[4].slug}`}>Read full article</a>
+          </footer>
+       </div>
+       <div class="blog4 blog">
+        <div class="image">
+            <img src={articles[5].coverImage} alt={articles[5].slug}>
+          </div>
+          <div class="blog_header">
+              <h2>{articles[5].title}</h2>
+          </div>
+          <footer class="blog_footer">
+              <a href={`https://dreamdeveloper.hashnode.dev/${articles[5].slug}`}>Read full article</a>
+          </footer>
+       </div>
+       <div class="blog5 blog">
+        <div class="image">
+            <img src='https://dreamdeveloper.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1670603187901%2Fh3IcEyfzE.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75' alt={articles[2].slug}>
+          </div>
+          <div class="blog_header">
+              <h2>{articles[2].title}</h2>
+          </div>
+          <footer class="blog_footer">
+              <a href={`https://dreamdeveloper.hashnode.dev/${articles[2].slug}`}>Read full article</a>
+          </footer>
+       </div>
        
     </div>
+    <High />
 </Layout>
