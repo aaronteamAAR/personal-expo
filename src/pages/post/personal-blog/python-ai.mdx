@@ -1,24 +1,34 @@
 ---
-title: Hello, World
+layout: ../../../layouts/Layout.astro
+title: AI with python explained with fewer than 140 characters
+description: Let's talk about the world of AI using python
+author: Aaron Chris
 ---
-
-# Hi there!
-
-
-{frontmatter.title}
-This Markdown file creates a page at `your-domain.com/page-1/`
-
-It probably isn't styled much, but Markdown does support:
-- **bold** and _italics._
-- lists
--  this is [link](https://astro.build)
+import '../../../styles/mdx.css'
 
 
-Colons can be used to align columns.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+# {frontmatter.title}
 
+
+
+You might have heard about Artificial Intelligence, but do you know what Python is? Well, it's a programming language that makes it easy to build applications and programs that can perform tasks like search and parse text.
+
+It's also very popular in the industry of AI because it's easy for anyone to learn and use. In fact, it's so easy that there are many ways to use Python with AI, including machine learning and deep learning algorithms.Building artificial intelligence (AI) has never been easier thanks to computer languages like Python, where a few lines of code can do a lot of different things.
+
+```
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+# Training data
+X = np.array([[1, 2], [3, 4], [5, 6]])
+y = np.array([1, 2, 3])
+
+# Create and train the model
+model = LinearRegression()
+model.fit(X, y)
+
+# Make predictions
+predictions = model.predict([[7, 8], [9, 10]])
+
+```

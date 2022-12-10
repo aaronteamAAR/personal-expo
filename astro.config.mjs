@@ -4,5 +4,10 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
+    markdown: {
+        shikiConfig: {
+          theme: 'dark-plus',
+        },
+      },
     integrations: [react(), mdx()],
 });

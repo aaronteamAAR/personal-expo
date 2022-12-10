@@ -1,0 +1,25 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.astro-code{
+    width: 30%;
+}
+
+code{
+  
+}
