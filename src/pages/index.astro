@@ -1,11 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Typed from 'typed.js';
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Layout from "../layouts/Layout.astro";;
 import Cards from "../components/Blogcards.astro";
 import Header from "../components/Header.astro";
 import High from "../components/Highlight.astro";
+import Text from "../components/Text.jsx";
+import AOS from "../components/AOS.jsx";
 
 ---
 
@@ -14,7 +13,8 @@ import High from "../components/Highlight.astro";
 <Layout>
     <Header />
     <div >
-        <Cards />
+        <Text client:load />
+        <AOS />
     </div>
  <High />
 </Layout>
