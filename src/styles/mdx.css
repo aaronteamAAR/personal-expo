@@ -34,6 +34,24 @@ p{
     padding-left: 23px;
 }
 
+ol{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+ol > li{
+    margin: auto;
+    max-width: 50%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+a{
+    color: black;
+    font-weight: 600;
+}
 code{
     font-size: 14px;
     
@@ -41,9 +59,9 @@ code{
 }
 
 em > strong{
-
-    padding-bottom: 9em ;
+    padding-bottom: 10em ;
 }
+
 
 
 
@@ -72,4 +90,10 @@ em > strong{
         font-size: 13px;
     }
 
+    ol > li{
+        margin: auto;
+        max-width: 70%;
+        font-size: 14px;
+        font-weight: 500;
+    }
 }

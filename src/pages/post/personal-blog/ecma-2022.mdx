@@ -1,0 +1,105 @@
+---
+layout: ../../../layouts/Layout.astro
+title: What's in ecma 2022
+description: Ecma 2022 javascript
+author: Aaron Chris
+---
+import '../../../styles/mdx.css'
+import Header from '../../../components/Header.astro'
+import High from '../../../components/Highlight.astro'
+
+<Header />
+
+# {frontmatter.title}
+
+I hear you, folks. Javascript is great and all, but seriously... this week? We'll be adding another new tool to our belt soon enough anyway, so let's get right to it. (Plus, if we didn't keep this window short, the Doc 
+Martens-wearing thrash metal heads who hang out on IRC
+
+
+ECMAScript is the standardized specification for the scripting language that is commonly known as JavaScript. The latest version of ECMAScript is ECMAScript 2022, which was published in June 2022. It includes several new features and improvements to the language, such as:
+
+1. Optional chaining, which allows developers to access properties of deeply nested objects without having to check for null or undefined at each level.
+
+```
+// Without optional chaining
+if (user && user.address && user.address.city) {
+  console.log(user.address.city);
+}
+
+// With optional chaining
+console.log(user?.address?.city);
+
+```
+
+In this code, we use optional chaining to access the city property of a user object. If the user object is null or undefined, or if the address property is null or undefined, the code will not throw an error and the city property will not be accessed. Instead, the expression will simply return null or undefined, and no further processing will be done
+
+Optional chaining is a new feature in ECMAScript 2022, and it can make it easier to access properties of deeply nested objects without having to check for null or undefined at each level. It can help reduce the amount of code needed and make it easier to work with complex data structures in JavaScript.                 
+<br />
+2. Nullish coalescing, which allows developers to provide default values for expressions that might evaluate to null or undefined.
+
+
+
+
+```
+// Without nullish coalescing
+let userName = "";
+if (user && user.name) {
+  userName = user.name;
+}
+
+// With nullish coalescing
+userName = user?.name ?? "";
+
+
+```
+
+
+
+In this code, we use nullish coalescing to provide a default value for the name property of a user object. If the name property is null or undefined, the default value "" will be assigned to the userName variable. If the name property is defined and has a non-null value, that value will be assigned to the userName variable.
+
+Nullish coalescing is a new feature in ECMAScript 2022, and it can make it easier to provide default values for expressions that might evaluate to null or undefined. It can help reduce the amount of code needed and make it easier to work with data that might be missing or incomplete in JavaScript.
+
+<br />
+3. Asynchronous iteration, which allows developers to use the for-await-of loop to iterate over asynchronous iterables in a synchronous manner.
+
+```
+async function getUserNames() {
+  const users = await fetchUsers(); // Assume this returns a list of users
+
+  for await (const user of users) {
+    console.log(user.name);
+  }
+}
+
+```
+In this code, we use the for-await-of loop to iterate over a list of users that are returned by the fetchUsers function. The for-await-of loop allows us to iterate over an asynchronous iterable in a synchronous manner, so we can easily process each user in the list without having to deal with the complexities of asynchronous programming.
+
+Asynchronous iteration is a new feature in ECMAScript 2022, and it can make it easier to work with asynchronous iterables in JavaScript. It can help simplify your code and make it more readable and maintainable, especially when working with data that is returned asynchronously.
+
+
+<br />
+<br />
+
+-----------------------------------
+ECMAScript 2022 also includes various other features and improvements to the language, such as additional syntax for regular expressions, changes to the Promise API, and more. You can learn more about the specific features and changes in ECMAScript 2022 on the [ ECMA International website.](https://262.ecma-international.org/)
+
+
+
+<br />
+<br />
+Overall, ECMAScript 2022 is the latest version of the JavaScript language specification, and it includes several new features and improvements that can make it easier and more convenient for developers to build applications using JavaScript.
+
+
+<br />
+<br />
+
+<br />
+<br />
+
+<br />
+<br />
+
+<br />
+<br />
+
+<High />
