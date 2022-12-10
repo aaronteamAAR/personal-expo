@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro'
 import '../../styles/blog.css'
 import Header from  '../../components/Header.astro';
 import High from  '../../components/Highlight.astro';
+import Personal from  '../../components/PersonalBlog.astro';
 
 const query = `
 query GetUserArticles($page: Int!) {
@@ -96,7 +97,8 @@ console.log(articles[1].coverImage)
               <a href={`https://dreamdeveloper.hashnode.dev/${articles[2].slug}`}>Read full article</a>
           </footer>
        </div>
-       
+     
     </div>
+    <Personal />
     <High />
 </Layout>
