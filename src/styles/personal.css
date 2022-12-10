@@ -3,7 +3,7 @@
 
 
 button{
-   margin-left: 40em;
+    margin-left: 40em;
     width: 250px;
     height: 40px;
     outline: 0;
@@ -11,7 +11,7 @@ button{
     cursor: pointer;
     border-radius: 5px;
     padding: 10px 24px 16px;
-    margin-bottom: 10em;
+
     font-size: 18px;
     font-weight: 700;
     line-height: 1;
@@ -26,9 +26,16 @@ button:hover{
 }
 
 
+button > a{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
 @media screen and (max-width: 768px){
 
     button{
-        display: none;
+        margin-left: 2em;
     }
 }

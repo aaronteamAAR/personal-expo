@@ -1,0 +1,30 @@
+
+
+.btn-main{
+    position: relative;
+    margin-top: 70em;
+}
+
+
+.arrow{
+    position: absolute;
+    width: 200px;
+    right: 29em;
+    top: -2em;
+    transform: rotate(180deg);
+}
+
+
+
+@media screen and (max-width: 768px){
+
+   .btn-main{
+    width: 90px;
+    margin-left: 2em;
+    margin-top: 29em;
+    padding-bottom: 4em;
+   }
+
+ 
+
+  }

@@ -2,8 +2,8 @@
 import Layout from '../../layouts/Layout.astro'
 import '../../styles/blog.css'
 import Header from  '../../components/Header.astro';
-import High from  '../../components/Highlight.astro';
-import Personal from  '../../components/PersonalBlog.astro';
+
+import Cards from "../../components/Blogcards.astro";
 
 const query = `
 query GetUserArticles($page: Int!) {
@@ -99,6 +99,8 @@ console.log(articles[1].coverImage)
        </div>
      
     </div>
-    <Personal />
+    <div class="flex_card">
+       <Cards />
+    </div>
     <High />
 </Layout>

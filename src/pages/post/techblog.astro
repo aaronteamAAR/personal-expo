@@ -1,0 +1,19 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import '../../styles/blog.css'
+import Header from  '../../components/Header.astro';
+import High from  '../../components/Highlight.astro';
+import Cards from "../../components/Blogcards.astro";
+import Text from  "../../components/AOS.jsx";
+
+---
+
+<Layout>
+    <Header />
+    <Cards />
+    <div class="text">
+        <Text client:load/>
+    </div>
+  
+    <High />
+</Layout>

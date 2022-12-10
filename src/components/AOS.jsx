@@ -12,8 +12,8 @@ class animate extends React.Component {
 
   render() {
     return (
-      <div  data-aos="fade">
-        <span className={styles.text}>
+      <div >
+        <span className={styles.text} data-aos="fade-up">
         "Thanks for visiting my portfolio! I hope you enjoy exploring my projects and learning more about what I do."
         </span>
       </div>

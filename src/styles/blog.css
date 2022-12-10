@@ -57,6 +57,13 @@
      margin-left: 3.4em;
 }
 
+.cards{
+   display: none;
+}
+
+.text{
+    margin-top: -43em;
+}
 
 @media screen and (max-width: 768px) {
     .container{
@@ -78,5 +85,10 @@
 
     .blog{
         zoom: 0.9;
+    }
+
+
+    .text{
+        margin-top: -13em;
     }
 }
