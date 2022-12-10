@@ -14,6 +14,7 @@ export default function Type() {
                 "Welcome",
                 "Thanks for being here",
                 "This site is built based on essentialism and simplicity",
+                "Now scroll down"
             ],
             startDelay: 200,
             typeSpeed: 200,
@@ -27,6 +28,8 @@ export default function Type() {
             typed.destroy();
         };
     }, []);
+
+    
   
    return(
     <div>
