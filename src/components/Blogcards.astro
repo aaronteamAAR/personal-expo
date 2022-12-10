@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import '../styles/cards.css'
+const posts = await Astro.glob('../pages/post/personal-blog/*.mdx')
+posts.slice(0,3).map((post) =>
+   console.log(post.url)
+)
+
+---
+
+
+<Layout>
+
+    
+    <div class="container"> 
+    {posts.slice(0, 3).map((post) => (
+     
+  
+  <div class="card"> 
+    
+   <div class="imagem"> 
+   <img class="img" src="https://preview.redd.it/t60wtssalt951.png?auto=webp&s=536f2040d92f11a50d7435192924d527cecfe3c7">     
+  </div>     
+     
+    <div class="texto"> 
+      <h2 class="titulo">{post.frontmatter.title}</h2>
+      <p class="desc">{post.frontmatter.description} </p>
+    </div>  
+    
+    <div class="button">
+      <button type="button" class="btn"><a href={post.url}>Read more</a> </button>
+    </div>
+  </div>
+    ))}
+
+    </div>
+   
+</Layout>

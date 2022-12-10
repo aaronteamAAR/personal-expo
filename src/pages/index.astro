@@ -3,16 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import Typed from 'typed.js';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from 'react';
-
-
+import Cards from "../components/Blogcards.astro";
+import Header from "../components/Header.astro";
+import High from "../components/Highlight.astro";
 
 ---
 
 
 
 <Layout>
+    <Header />
     <div >
+        <Cards />
     </div>
-
+ <High />
 </Layout>
