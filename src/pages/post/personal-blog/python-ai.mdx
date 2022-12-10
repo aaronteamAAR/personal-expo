@@ -5,8 +5,11 @@ description: Let's talk about the world of AI using python
 author: Aaron Chris
 ---
 import '../../../styles/mdx.css'
+import Header from '../../../components/Header.astro'
+import High from '../../../components/Highlight.astro'
 
 
+<Header />
 
 # {frontmatter.title}
 
@@ -32,3 +35,15 @@ model.fit(X, y)
 predictions = model.predict([[7, 8], [9, 10]])
 
 ```
+
+
+In this code above, we use the LogisticRegression class from the sklearn library to create a model that can learn from the given training data (X and y) and make predictions on new data (in this case, the coordinates [9, 10] and [11, 12]). The model will use a logistic regression algorithm to classify the new data points as either 0 or 1, depending on which category they belong to.
+
+
+
+
+
+***And that's how AI with Python works :)***
+
+
+<High />

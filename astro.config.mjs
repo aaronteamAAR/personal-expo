@@ -7,6 +7,7 @@ export default defineConfig({
     markdown: {
         shikiConfig: {
           theme: 'dark-plus',
+          langs: ['python'],
         },
       },
     integrations: [react(), mdx()],
