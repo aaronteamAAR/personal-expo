@@ -6,14 +6,8 @@
     padding: 23px 0 15px 0 ;
     font-weight: 200;
     font-size: 34px;
-  
 }
 
-
-.home{
-  text-decoration: none;
-  color: black;
-}
 .line-1 {
     height: 1px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cline x1='0' y1='0' x2='100' y2='0' stroke='black' stroke-width='2' vector-effect='non-scaling-stroke'%3E%3C/line%3E%3C/svg%3E");
@@ -26,9 +20,13 @@
     grid-column: 3;
     grid-row: 1;
     transform: translateY(-150px);
+    z-index: -1;
   }
 
-  
+  .home{
+    color: black;
+    text-decoration: none;
+  }
 
   .flex_main{
       margin-top: 2em;
@@ -38,12 +36,11 @@
       gap: 3em;
       float: right;
       list-style-type: georgian;
-      z-index: -1;
+      
   }
 
   .flex_main > li > a{
     color: black;
-    z-index: -1;
     text-decoration: underline;
   }
 
@@ -64,7 +61,6 @@
       flex-direction: row;
       gap: 2em;
       top: 4em;
-      z-index: -1;
       position: absolute;
       font-size: 14px;
       padding-left: 23px;
