@@ -1,1 +1,1 @@
-{"runtime":"nodejs17.x","handler":"dist\\entry.js","launcherType":"Nodejs"}
+{"runtime":"nodejs16.x","handler":"dist\\entry.js","launcherType":"Nodejs"}
