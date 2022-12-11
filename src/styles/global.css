@@ -13,6 +13,10 @@ div:is(.profile, .about, .quote) {
     padding: 23px 0 0 23px;
 }
 
+.header{
+padding-top: 3em;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -319,5 +323,5 @@ div:is(.card1, .card2, .card3) {
 
 
 
-    
+
 }
