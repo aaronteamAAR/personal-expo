@@ -91,6 +91,11 @@ padding-top: 3em;
     list-style: none;
 }
 
+.frameworks{
+    font-size: 19px;
+    font-weight: 700;
+}
+
 .second-col {
     grid-row: 2;
     background-color: black;

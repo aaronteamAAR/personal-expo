@@ -48,6 +48,10 @@
 
   @media screen and (max-width: 768px){
 
+
+    .header-title{
+      margin-top: -1.4em;
+    }
     .svg_star{
       grid-column: 1;
       grid-row:4 ;
@@ -60,14 +64,14 @@
       padding: 0 23px 0 13px;
       flex-direction: row;
       gap: 2em;
-      top: 4em;
+      top: 3.4em;
       position: absolute;
       font-size: 14px;
       padding-left: 23px;
     }
 
     .flex_main > li{
-      padding-top: 12px;
+      padding-top: 23px;
       font-size: 14px;
     }
   } 
