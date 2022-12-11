@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";;
+import Cards from "../components/Blogcards.astro";
+import Header from "../components/Header.astro";
+import High from "../components/Highlight.astro";
+import Text from "../components/Text.jsx";
+import AOS from "../components/AOS.jsx";
+import Btn from "../components/HomeBtn.astro";
+import '../styles/index.css'
+---
+
+
+
+<Layout>
+    <Header />
+    <div >
+    <Text client:load />
+    </div>
+     <AOS client:load />
+     <div class="btn-main">
+        <img class="arrow" src="./pppointed (1).svg" alt="arrow-svg" />
+        <Btn />
+     </div>
+     
+ <High />
+</Layout>
