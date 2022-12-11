@@ -13,5 +13,6 @@ export default defineConfig({
           langs: ['python'],
         },
       },
+      site: '',
     integrations: [react(), mdx(), sitemap()],
 });
