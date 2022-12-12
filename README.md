@@ -1,1 +1,10 @@
-b718202ad4f74e200d48410a-84101167687879ab1ed6e2cb82e45a9d5303c1d66085b2a1d8dd5b0925bacb63582a8f3e10ed98582e004c4e7f2c58b7e2b23880cd952fd16dd0450eea6dfb26290729657edea7e4e6f99e185e5b0e46642514cc0a1008443a7482a877299ffe57add5e8ce5e
+A personal site for my works built with mainly Astro, the design was gottenn from dribble based on essentialism and simplicity 
+
+
+Dependencies:
+
+- Astro/tailwind
+- Astro/cloudfare
+-Astro/mdx
+- AOS
+-Typed js
