@@ -9,7 +9,7 @@
     margin-top: 2em;
     font-size: 64px;
     text-decoration: underline;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .container{
@@ -55,10 +55,6 @@
 .blog_footer{
     text-align: center;
      margin-left: 3.4em;
-}
-
-.zoom{
-    height: 60px;
 }
 
 .cards{

@@ -2,7 +2,7 @@
 .container{
     display: flex;
     justify-content: center;
-    margin-left: -3em;
+    margin-top: 60px;
     }
     
     .card {
@@ -38,10 +38,10 @@
     }
     
     .desc {
-    color: #fff;
-    font-weight: 200;
-    font-size: 13px;
-    text-align: center;
+      padding-top: 23px;
+      padding-bottom: 13px;
+   width: 100%;
+   
     }
     
     .button {
