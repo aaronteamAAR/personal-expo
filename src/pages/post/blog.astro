@@ -39,13 +39,13 @@ console.log(articles[1].coverImage)
     <h2 class="h2_header">Blogs from hashnode</h2>
     <div class="container">
            
-<div class=" mb-4 zoom max-w-sm bg-white text-gray-700 border border-gray-200 rounded-lg shadow-md dark:bg-black dark:border-gray-700">
+<div class=" mb-4 max-w-sm bg-white text-gray-700 border border-gray-200 rounded-lg shadow-md dark:bg-black dark:border-gray-700">
     <a href="#">
         <img class="rounded-t-lg" src={articles[0].coverImage} alt={articles[0].slug}/>
     </a>
     <div class="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{articles[0].title}</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-900">{articles[0].title}</h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{articles[0].brief}</p>
         <a  href={`https://dreamdeveloper.hashnode.dev/${articles[0].slug}`} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
