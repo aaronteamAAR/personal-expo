@@ -84,3 +84,18 @@
          margin-left: 3em;
        }
     }
+
+
+    @media screen and (min-width: 800px){
+    .container{
+        margin-left: 5em;
+        margin-top: 7em;
+    }
+     
+
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    }

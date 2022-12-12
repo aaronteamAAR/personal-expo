@@ -18,3 +18,13 @@
         margin-left: 1em;
     }
   }
+
+
+  @media screen and (min-width: 800px){
+
+    .text{
+        font-size: 6.5em;
+        width: 70%;
+        margin-left: 1em;
+    }
+  }

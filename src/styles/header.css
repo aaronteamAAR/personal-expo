@@ -76,4 +76,18 @@
     }
   } 
 
+
+@media screen and (min-width: 768px){
+  .flex_main {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .svg_star{
+    display: none;
+  }
+}
+
+
+
   
