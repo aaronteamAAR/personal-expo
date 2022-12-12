@@ -57,6 +57,10 @@
      margin-left: 3.4em;
 }
 
+.zoom{
+    height: 60px;
+}
+
 .cards{
    display: none;
 }
