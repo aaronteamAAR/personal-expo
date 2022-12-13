@@ -2,20 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import '../styles/cards.css'
 const posts = await Astro.glob('../pages/post/personal-blog/*.mdx')
-posts.slice(0,3).map((post) =>
-   console.log(post.url)
-)
 
 ---
 
 
-<Layout>
-
-    
+<Layout>    
     <div class="container"> 
     {posts.slice(0, 3).map((post) => (
      
-  
   <div > 
       
 <div class="max-w-sm cardes p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-black dark:border-gray-300">

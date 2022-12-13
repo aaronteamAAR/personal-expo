@@ -30,9 +30,3 @@
     }
 }
 
-@media screen and (min-width: 800px){
-    .text-highlight{
-        font-size: 16px;
-        margin-left: -51em;
-    }
-}

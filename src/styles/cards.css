@@ -86,16 +86,27 @@
     }
 
 
-    @media screen and (min-width: 800px){
+    @media screen and (min-width: 768px){
     .container{
-        margin-left: 5em;
+        margin-left: 10em;
         margin-top: 7em;
-    }
-     
-
-    .container{
-      display: flex;
+        display: flex;
       flex-direction: column;
     }
 
+    }
+
+
+
+    @media screen and (min-width:1024px) {
+      .container{
+        margin-left: 14em;
+        margin-bottom: -43em;
+      }
+    }
+    @media screen and (max-width:1900px) {
+      .container{
+        margin-left: 21em;
+        margin-bottom: -43em;
+      }
     }

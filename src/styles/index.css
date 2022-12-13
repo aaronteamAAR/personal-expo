@@ -9,8 +9,8 @@
 .arrow{
     position: absolute;
     width: 200px;
-    right: 29em;
-    top: -2em;
+    right: 45em;
+    top: 24em;
     transform: rotate(180deg);
 }
 
@@ -27,4 +27,24 @@
 
  
 
+  }
+
+
+  @media screen and (min-width:1024px){
+    .arrow{
+        right: 12em;
+        top: 24em;
+    }
+
+    .btn-main{
+        margin-top: 130em;
+        margin-left: -66em;
+    }
+  }
+
+
+  @media screen and (min-width: 2560px) {
+    .arrow{
+        right: 92em;
+    }
   }

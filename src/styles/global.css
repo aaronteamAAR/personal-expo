@@ -328,7 +328,7 @@ div:is(.card1, .card2, .card3) {
 }
 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 780px){
 
     .about{
         
@@ -396,3 +396,12 @@ div:is(.card1, .card2, .card3) {
         padding-bottom: 3em;
     }
 }
+
+
+
+@media screen and (min-width:1024px){
+  .projects{
+    margin-left: 31em;
+    width: 100%;
+  }
+  }
